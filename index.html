@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        max-width: 80vw;
+        margin: 40px auto;
+        font-size: large;
+        font-family: "Roboto", sans-serif;
+      }
+
+      h2,
+      h3,
+      h4 {
+        text-decoration: underline;
+      }
+
+      p {
+        color: #333;
+      }
+
+      mark {
+        font-style: italic;
+      }
+
+      code {
+        background-color: #eee;
+        white-space: pre;
+        display: block;
+        width: fit-content;
+        padding: 0 20px;
+      }
+
+      .divider {
+        width: 60%;
+        height: 4px;
+        background-color: #000;
+        margin: 50px 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Problem</h1>
+    <p>
+      There is a string, <mark>s</mark>, of lowercase English letters that is
+      repeated infinitely many times. Given an integer, <mark>n</mark>, find and
+      print the number of letter a's in the first <mark>n</mark> letters of the
+      infinite string.
+    </p>
+
+    <h3>Example</h3>
+    <code>
+s = 'abcac'
+
+n = 10
+    </code>
+    <p>
+      The substring we consider is <mark>abcacabcac</mark>, the first
+      <mark>10</mark> characters of the infinite string. There are
+      <mark>4</mark> occurrences of <mark>a</mark> in the substring.
+    </p>
+
+    <h3>Function Description</h3>
+    <p>Complete the repeatedString function in the editor below.</p>
+    <p>repeatedString has the following parameter(s):</p>
+    <ul>
+      <li>s: a string to repeat</li>
+      <li>n: the number of characters to consider</li>
+    </ul>
+    <h4>Returns</h4>
+    <ul>
+      <li>int: the frequency of a in the substring</li>
+    </ul>
+    <h3>Input Format</h3>
+    <ul>
+      <li>The first line contains a single string, <mark>s</mark>.</li>
+      <li>The second line contains an integer, <mark>a</mark>.</li>
+    </ul>
+    <div class="divider"></div>
+    <h3>Sample Input 0</h3>
+    <code>
+aba
+
+10
+    </code>
+    <h3>Sample Output 0</h3>
+    <code>
+7
+    </code>
+    <h3>Explanation 0</h3>
+    <p>
+      The first <mark>n = 10</mark> letters of the infinite string are
+      <mark>abaabaabaa</mark>. Because there are <mark>7</mark>a's, we return
+      <mark>7</mark>.
+    </p>
+    <h3>Sample Input 1</h3>
+    <code>
+a
+
+1000000000000
+    </code>
+    <h3>Sample Output 1</h3>
+    <code>
+1000000000000
+    </code>
+    <h3>Explanation 1</h3>
+    <p>
+      Because all of the first <mark>n = 1000000000000</mark> letters of the
+      infinite string are a, we return <mark>1000000000000</mark>.
+    </p>
+  </body>
+</html>
